@@ -10,6 +10,8 @@
 		D4184F46230EA1E900989204 /* MRAID.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D4184F44230EA1E900989204 /* MRAID.bundle */; };
 		D4184F48230EA65A00989204 /* VideoXSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4184F45230EA1E900989204 /* VideoXSDK.framework */; };
 		D4184F49230EA65A00989204 /* VideoXSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4184F45230EA1E900989204 /* VideoXSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D47017D223545DEC0085AE2F /* AppLovinSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D47017D123545DEC0085AE2F /* AppLovinSDKResources.bundle */; };
+		D47EBCBB232F6AA800767665 /* GDPRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47EBCBA232F6AA800767665 /* GDPRViewController.m */; };
 		D4F0393622C9EE5A005F7B77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F0393522C9EE5A005F7B77 /* AppDelegate.m */; };
 		D4F0393C22C9EE5A005F7B77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4F0393A22C9EE5A005F7B77 /* Main.storyboard */; };
 		D4F0393E22C9EE5D005F7B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4F0393D22C9EE5D005F7B77 /* Assets.xcassets */; };
@@ -38,6 +40,9 @@
 /* Begin PBXFileReference section */
 		D4184F44230EA1E900989204 /* MRAID.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MRAID.bundle; sourceTree = "<group>"; };
 		D4184F45230EA1E900989204 /* VideoXSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VideoXSDK.framework; sourceTree = "<group>"; };
+		D47017D123545DEC0085AE2F /* AppLovinSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppLovinSDKResources.bundle; sourceTree = "<group>"; };
+		D47EBCB9232F6AA800767665 /* GDPRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDPRViewController.h; sourceTree = "<group>"; };
+		D47EBCBA232F6AA800767665 /* GDPRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDPRViewController.m; sourceTree = "<group>"; };
 		D4F0393122C9EE5A005F7B77 /* VideoXDemo_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoXDemo_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F0393422C9EE5A005F7B77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4F0393522C9EE5A005F7B77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -71,6 +76,7 @@
 		D4184F43230EA1E900989204 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				D47017D123545DEC0085AE2F /* AppLovinSDKResources.bundle */,
 				D4184F44230EA1E900989204 /* MRAID.bundle */,
 				D4184F45230EA1E900989204 /* VideoXSDK.framework */,
 			);
@@ -109,6 +115,8 @@
 		D4F0394A22C9F875005F7B77 /* AdSamples */ = {
 			isa = PBXGroup;
 			children = (
+				D47EBCB9232F6AA800767665 /* GDPRViewController.h */,
+				D47EBCBA232F6AA800767665 /* GDPRViewController.m */,
 				D4F0395D22CB70B2005F7B77 /* VXBannerAdViewController.h */,
 				D4F0395E22CB70B2005F7B77 /* VXBannerAdViewController.m */,
 				D4F0396322CC51B9005F7B77 /* VXInterstitialAdViewController.h */,
@@ -207,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4F0394122C9EE5D005F7B77 /* LaunchScreen.storyboard in Resources */,
+				D47017D223545DEC0085AE2F /* AppLovinSDKResources.bundle in Resources */,
 				D4F0393E22C9EE5D005F7B77 /* Assets.xcassets in Resources */,
 				D4184F46230EA1E900989204 /* MRAID.bundle in Resources */,
 				D4F0393C22C9EE5A005F7B77 /* Main.storyboard in Resources */,
@@ -221,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4F0394422C9EE5D005F7B77 /* main.m in Sources */,
+				D47EBCBB232F6AA800767665 /* GDPRViewController.m in Sources */,
 				D4F0393622C9EE5A005F7B77 /* AppDelegate.m in Sources */,
 				D4F0396B22CC5252005F7B77 /* VXNativeAdViewController.m in Sources */,
 				D4F0396522CC51B9005F7B77 /* VXInterstitialAdViewController.m in Sources */,
@@ -380,7 +390,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "QiaoYan.VideoXDemo-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.budao.budao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -403,7 +413,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "QiaoYan.VideoXDemo-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.budao.budao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

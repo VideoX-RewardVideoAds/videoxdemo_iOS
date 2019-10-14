@@ -22,10 +22,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [VideoXSDK setLogLevel:VXLogLevelOff];
-    [VideoXSDK initWithAppID:@"3238"
-                      pubKey:@"f52275c7006fe85101637eedb1f73d5b"];
+    [VideoXSDK initWithAppID:@"3328"
+                      pubKey:@"12c6c73ef959f84f838773d96afeb141"];
     
-    self.splash = [[VXSplashAd alloc] initWithAdUnitId:@"21803"];
+    self.splash = [[VXSplashAd alloc] initWithAdUnitId:@"21824"];
     self.splash.delegate = self;
     [self.splash loadAdAndShowInWindow:self.window];
     
